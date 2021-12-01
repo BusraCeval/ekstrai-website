@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css?family=Fredoka+One&display");
+
+body {
+  min-height: 100vh;
+  background: radial-gradient(
+    circle,
+    rgba(45, 40, 142, 0.7) 50%,
+    rgba(1, 18, 70, 0.808) 70%
+  );
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  margin: 0;
+  font-family: "Fredoka One";
+  cursor: none;
+}
+
+.cursor {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  z-index: 99999;
+  fill: rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+  transition: transform 0.6s ease;
+}
+
+.cursor-hover {
+  transform: scale(5);
+  fill: rgba(255, 255, 255, 0.2);
+}
+
+.text {
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 10px;
+  animation-name: load;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  transition: color 0.4s ease;
+  color: rgb(2, 19, 72);
+}
+
+.text:hover {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+@keyframes load {
+  from {
+    transform: translate(0, 30px);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
