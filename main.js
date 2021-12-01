@@ -1,40 +1,20 @@
-const cursor = document.querySelector(".cursor");
-
-const text = document.querySelector(".text");
-
-cursor.style.visibility = "hidden";
-
-document.addEventListener("mousemove", (event) => {
-  cursor.setAttribute(
-    `style`,
-    `top: ${event.clientY - 6}px; left: ${event.clientX - 6}px`
-  );
-});
-
-text.addEventListener("mouseenter", () => {
-  cursor.classList.add("cursor-hover");
-});
-
-text.addEventListener("mouseleave", () => {
-  cursor.classList.remove("cursor-hover");
-});
-
-
 $(document).ready(function() {
 
     var arrLang={
         
         'tr':{
-
-            '0':'Sitemiz bir süreliğine bakımdadır.',
- 
-
-
+            '1': 'Web Sitemiz',
+            '2' : 'Yeniden tasarlanıyor',
+            '3' : 'Pek çok iyileştirme yapıyoruz ve yakında geri döneceğiz.',
+            '4' : 'E-postanızı girin ve sizinle iletişime geçelim.'
         },
 
 
         'en':{
-            '0':'Our site is under maintenance for a while.',
+            '1': 'our new website',
+            '2' : 'under construction',
+            '3' : 'We are making lots of improvements and will be back soon.',
+            '4' : 'Enter Your Email and Get Notified.'
         },
         
         
@@ -64,3 +44,24 @@ $('.dropdown-item').click(function() {
 
 });
    
+
+/* Under Construction Template
+ * by: Aleks Bella
+ */
+
+$(function(){
+
+  
+    $('#btn-ok').on('click',function(){
+     
+      if($('#emailadd').val().length === 0){
+        alert('Please enter your email to subscribe.');
+      }else{
+         $(".input-group-lg").css('color', '#f90').html("Thanks for the subscription.");
+        $("#myModal").modal("show");
+      }
+      
+      
+    });
+    
+  });

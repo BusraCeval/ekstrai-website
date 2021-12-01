@@ -2,18 +2,12 @@
 <html>
 
 <head>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Ubuntu+Mono&family=Varela+Round&display=swap"
-    rel="stylesheet">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Allura&family=Dancing+Script&family=Kaushan+Script&family=Satisfy&family=Yellowtail&display=swap"
-    rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -25,7 +19,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com//66aa7c98b3.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./style.css">
   <link rel="icon" href="./EkstrAiLogo.png" type="image/icon type">
   <title>EkstrAi-Endüstriyel Yapay Zeka</title>
@@ -34,7 +29,7 @@
 
 <body>
   <div class="dropdown m-5">
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="drop_yazı" data-toggle="dropdown"
+    <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="drop_yazı" data-toggle="dropdown"
       aria-haspopup="true" aria-expanded="false">
       English
     </button>
@@ -44,17 +39,63 @@
 
     </div>
     <div class="d-flex justify-content-center align-item-center my-2">
-      <img src="./EkstrAiLogo (2) 1.png" alt="EkstrAi Endüstriyel Yapay Zeka Bilişim Sistemleri" width="30%">
+      <img src="./EkstrAiLogo.png" alt="EkstrAi Endüstriyel Yapay Zeka Bilişim Sistemleri" width="25%">
     </div>
-    <section>
-      <p key=0 class="text m-0">
-        Our site is under maintenance for a while.
-      </p>
 
-      <svg class="cursor">
-        <circle cx="50%" cy="50%" r="50%">
-      </svg>
-    </section>
+
+
+    <div class="overlay"></div>
+    <div class="wrap">
+      <div class="content">
+        <p class="enter" key=1>our new website</p>
+        <h1 key=2>under consructıon</h1>
+        <div class="progress my-3">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
+            aria-valuemin="0" aria-valuemax="100" style="width: 45%"></div>
+        </div>
+        <h5 key=3>We are making lots of improvements and will be back soon.</h5>
+
+        <p class="p" key=4>Enter Your Email and Get Notified.</p>
+
+        <div class="input-group d-flex justify-content-center">
+          <input id="emailadd" name="emailadd" type="email" placeholder="Send Email..." class="form-control"
+            required />
+          <span class="input-group-btn mx-1">
+            <button id="btn-ok" class="btn">OK!</button>
+          </span>
+        </div>
+
+        <ul class="social d-flex justify-content-center list-inline">
+          <li class="mr-5"><a href="https://tr.linkedin.com/company/ekstrai"><i class="fab fa-linkedin"></i></a></li>
+          <li class="mr-5"><a href="https://www.instagram.com/ekstrai_io/"><i class="fab fa-instagram"></i></a></li>
+          <li class="mr-5"><a href="#"><i class="fab fa-twitter"></i></a></li>
+        </ul>
+
+      </div>
+      <!-- END #CONTENT -->
+      <p class="text-center text-secondary p-5">&copy; Copyright 2021 EkstrAi. All Rights Reserved.</p>
+    </div>
+    <!-- END #WRAP -->
+
+    <!-- Modal -->
+    <div id="btn-ok" class="modal fade" role="dialog">
+      <div class="modal-dialog  modal-sm">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Success</h4>
+          </div>
+          <div class="modal-body">
+            <p>Thanks for the subscription.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
     <script src="./main.js"></script>
