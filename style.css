@@ -3,7 +3,14 @@
 html {
   min-height: 100vh;
 }
-
+@media screen and (min-width: 800px) {
+  .container {
+    margin: 1em 2em;
+  }
+}
+* {
+  box-sizing: border-box;
+}
 body {
   text-align: center;
   background-image: url("./green-chameleon-WvuTnXz1hSc-unsplash.jpg");
@@ -43,7 +50,9 @@ body {
   line-height: 60px;
   text-align: center;
   font-family: "Francois One", sans-serif;
-  font-size: 50px;
+  font-size: 35px;
+  justify-content: center;
+  align-items: center;
 }
 .content  {
   color: rgba(255, 255, 255, 0.712);
@@ -63,12 +72,14 @@ body {
   color: rgba(255, 255, 255, 0.712);
   line-height: 30px;
   padding-bottom: 12px;
-  font-size: 25px;
+  font-size: 20px;
   font-family: "Francois One", sans-serif;
 }
 
 .content ul.social {
   margin-top: 45px;
+  align-items: center;
+  justify-content: center;
 }
 
 .content .social li i{
